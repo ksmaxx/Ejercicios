@@ -13,5 +13,11 @@
         <button type="button" onclick="calcularPerimetro()">Calcular</button>
     </form>
     <div id="resultado"></div>
+    function calcularPerimetro() {
+    var lado = parseFloat(document.getElementById("lado").value);
+    var perimetro = lado * 4;
+    document.getElementById("resultado").innerHTML = "El perímetro del cuadrado es: " + perimetro;
+}
+   
 </body>
 </html>
